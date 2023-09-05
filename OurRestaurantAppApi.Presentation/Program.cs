@@ -1,6 +1,11 @@
+using OurRestaurantAppAPI.Persistance.Extension.ServiceRegistrations;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//All Percistance Layer's Service Registrartion
+builder.Services.AddPersistanceServices();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
